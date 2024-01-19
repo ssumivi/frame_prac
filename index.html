@@ -55,6 +55,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
     <!-- js -->
     <script src="js/html5shiv.js"></script>
     <!-- 새로 고침 잘 안되니까 잠깐 주석처리 -->
@@ -65,88 +66,172 @@
   <body>
     <!-- whole layout -->
     <div class="wrap">
-        <!-- header top -->
-        <header class="header">
-            <div class="inner">
-                <!-- top -->
-                <div class="header_top">
-                    <!-- top left -->
-                    <div class="header_left">
-                        <a href="#" alt="interpark" class="logo"></a>
-                        <form action="#" class="search">
-                            <input type="text" name="" class="search_txt" maxlength="100" placeholder="검색어를 입력해주세요.">
-                            <input type="reset" class="search_reset">
-                            <input type="button" class="search_btn">
-                        </form>
-                    </div>
-                    <!-- top right -->
-                    <div class="header_right">
-                        <ul class="member_list">
-                            <li>
-                                <a href="#">로그인</a>
-                            </li>
-                            <li>
-                                <a href="#">회원가입</a>
-                            </li>
-                            <li class="mypage_btn">
-                                <a href="#">마이페이지<i class="icon_arrow"></i></a>
-                                <div class="mypage">
-                                    <ul class="mypage_list">
-                                        <li><a href="#"><b>투어</b>마이페이지</a></li>
-                                        <li><a href="#"><b>티켓</b>마이페이지</a></li>
-                                        <li><a href="#"><b>쇼핑</b>마이페이지</a></li>
-                                        <li><a href="#"><b>도서</b>마이페이지</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <a href="#" class="mobile_mypage">
-                            <img src="images/icon_mypage.svg" alt="마이페이지">
-                        </a>
-                    </div>
-                </div>
-                <!-- bt -->
-                <div class="header_bt">
-                  <ul class="service-list ">
-                    <li>
-                      <a href="#"
-                        ><img src="images/icon_tour.png" alt="투어" />투어</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/icon_ticket.png" alt="티켓" />티켓</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/icon_shopping.png" alt="쇼핑" />쇼핑</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/icon_book.png" alt="도서" />도서</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/icon_triple.png" alt="트리플" />트리플</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="images/icon_nol.png" alt="NOL혜택" />NOL혜택</a
-                      >
-                    </li>
-                  </ul>
-      
-                  <ul class="service-menu ">
-                    <li><a href="#">티켓오픈</a></li>
-                  </ul>
-      
-                </div>
+      <!-- header top -->
+      <header class="header">
+        <div class="inner">
+          <!-- top -->
+          <div class="header_top">
+            <!-- top left -->
+            <div class="header_left">
+              <a href="#" alt="interpark" class="logo"></a>
+              <form action="#" class="search">
+                <input
+                  type="text"
+                  name=""
+                  class="search_txt"
+                  maxlength="100"
+                  placeholder="검색어를 입력해주세요."
+                />
+                <input type="reset" class="search_reset" />
+                <input type="button" class="search_btn" />
+              </form>
             </div>
-        </header>
+            <!-- top right -->
+            <div class="header_right">
+              <ul class="member_list">
+                <li>
+                  <a href="#">로그인</a>
+                </li>
+                <li>
+                  <a href="#">회원가입</a>
+                </li>
+                <li class="mypage_btn">
+                  <a href="#">마이페이지<i class="icon_arrow"></i></a>
+                  <div class="mypage">
+                    <ul class="mypage_list">
+                      <li>
+                        <a href="#"><b>투어</b>마이페이지</a>
+                      </li>
+                      <li>
+                        <a href="#"><b>티켓</b>마이페이지</a>
+                      </li>
+                      <li>
+                        <a href="#"><b>쇼핑</b>마이페이지</a>
+                      </li>
+                      <li>
+                        <a href="#"><b>도서</b>마이페이지</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="mobile_mypage">
+                <img src="images/icon_mypage.svg" alt="마이페이지" />
+              </a>
+            </div>
+          </div>
+          <!-- bt -->
+          <div class="header_bt">
+            <ul class="service-list">
+              <li>
+                <a href="#"
+                  ><img src="images/icon_tour.png" alt="투어" />투어</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_ticket.png" alt="티켓" />티켓</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_shopping.png" alt="쇼핑" />쇼핑</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_book.png" alt="도서" />도서</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_triple.png" alt="트리플" />트리플</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon_nol.png" alt="NOL혜택" />NOL혜택</a
+                >
+              </li>
+            </ul>
+
+            <ul class="service-menu">
+              <li><a href="#">티켓오픈</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- suggest event -->
+      <section class="promotion">
+        <div class="inner">
+          <div class="section_top">
+            <h2>오늘의 픽</h2>
+            <p>인터파크에서 할인혜택을 꼭 챙기세요.</p>
+          </div>
+          <!-- swiper -->
+          <div class="promotion_slide">
+            <button class="swiper_btn sw_prev">이전</button>
+            <button class="swiper_btn sw_next">다음</button>
+            <!-- promotion swiper -->
+            <div class="swiper swiper_prom">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/promotion1.jpg" alt="프로모션" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/promotion2.png" alt="프로모션" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/promotion3.jpg" alt="프로모션" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/promotion4.jpg" alt="프로모션" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/promotion5.jpg" alt="프로모션" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/promotion6.jpg" alt="프로모션" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- promotion swiper -->
+      <script>
+        var swiper = new Swiper(".swiper_prom", {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          speed: 1000,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".promotion .sw_next",
+            prevEl: ".promotion .sw_prev",
+          },
+          breakpoints: {
+            760: {
+              slidesPerView: 2,
+            },
+          },
+        });
+      </script>
     </div>
   </body>
 </html>
