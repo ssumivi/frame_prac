@@ -62,6 +62,7 @@
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <!-- whole layout -->
@@ -210,28 +211,6 @@
           </div>
         </div>
       </section>
-      <!-- promotion swiper -->
-      <script>
-        var swiper = new Swiper(".swiper_prom", {
-          slidesPerView: 1,
-          spaceBetween: 24,
-          speed: 1000,
-          loop: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          navigation: {
-            nextEl: ".promotion .sw_next",
-            prevEl: ".promotion .sw_prev",
-          },
-          breakpoints: {
-            760: {
-              slidesPerView: 2,
-            },
-          },
-        });
-      </script>
       <!-- shopping suggest -->
       <section class="shopping">
         <div class="inner">
@@ -382,50 +361,6 @@
           </div>
         </div>
       </section>
-      <!-- swiper shopping -->
-      <script>
-        var swiper = new Swiper(".swiper_sp", {
-          slidesPerView: 4,
-          spaceBetween: 10,
-          grid: {
-            rows: 2,
-            fill: "row",
-          },
-          navigation: {
-            nextEl: ".section_slide .sw_next",
-            prevEl: ".section_slide .sw_prev",
-          },
-          breakpoints: {
-            900: {
-              spaceBetween: 32,
-              slidesPerView: 4,
-              // 화면당 3개씩 슬라이드 이동
-              slidesPerGroup: 3,
-              grid: {
-                rows: 1,
-              },
-            },
-            1024: {
-              spaceBetween: 32,
-              slidesPerView: 3,
-              // 화면당 3개씩 슬라이드 이동
-              slidesPerGroup: 3,
-              grid: {
-                rows: 1,
-              },
-            },
-            1280: {
-              spaceBetween: 26,
-              slidesPerView: 4,
-              // 화면당 4개씩 슬라이드 이동
-              slidesPerGroup: 4,
-              grid: {
-                rows: 1,
-              },
-            },
-          },
-        });
-      </script>
       <!-- tour suggestion -->
       <section class="tour">
         <div class="inner">
@@ -597,40 +532,6 @@
           </div>
         </div>
       </section>
-      <script>
-        new Swiper(".sw-tour", {
-          slidesPerView: 3,
-          grid: {
-            rows: 2,
-            fill: "row",
-          },
-          navigation: {
-            nextEl: ".section_slide .sw_next",
-            prevEl: ".section_slide .sw_prev",
-          },
-          spaceBetween: 10,
-          breakpoints: {
-            1024: {
-              spaceBetween: 32,
-              slidesPerView: 2,
-              // 화면당 2개씩 슬라이드 이동
-              slidesPerGroup: 2,
-              grid: {
-                rows: 1,
-              },
-            },
-            1280: {
-              spaceBetween: 26,
-              slidesPerView: 3,
-              // 화면당 4개씩 슬라이드 이동
-              slidesPerGroup: 3,
-              grid: {
-                rows: 1,
-              },
-            },
-          },
-        });
-      </script>
       <!-- ticket suggest -->
       <section class="ticket">
         <div class="inner">
@@ -788,22 +689,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              var swiper = new Swiper(".sw-ticket", {
-                  slidesPerView: "auto",
-                  spaceBetween: 10,
-                  breakpoints: {
-                    1024: {
-                      slidesPerView: 3,
-                      spaceBetween: 32,
-                    },
-                    1280: {
-                      slidesPerView: 4,
-                      spaceBetween: 27,
-                    },
-                  },
-                });
-              </script>
           </div>
           <div class="section-bottom">
             <a href="#" class="bt-link-shop">티켓 홈 바로가기</a>
@@ -813,169 +698,153 @@
       <section class="live">
         <div class="inner">
           <div class="section_top">
-            <img src="images/title_live.svg" alt="라이브">
+            <img src="images/title_live.svg" alt="라이브" />
             <div class="section_slide">
               <!-- navigation -->
-            <button class="swiper_btn sw_prev">이전</button>
-            <button class="swiper_btn sw_next">다음</button>
-             <!-- live swiper -->
-             <div class="swiper sw-live">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#" class="live-link">
-                    <div class="live-img">
-                      <img src="images/live1.jpg" alt="라이브" />
-                    </div>
-                    <div class="live-info">
-                      <div class="live-info-top">
-                        <span class="live-info-cate">방송예정</span>
-                        <p class="live-info-title">
-                          2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
-                          준비했어요😆
-                        </p>
+              <button class="swiper_btn sw_prev">이전</button>
+              <button class="swiper_btn sw_next">다음</button>
+              <!-- live swiper -->
+              <div class="swiper sw-live">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="live-link">
+                      <div class="live-img">
+                        <img src="images/live1.jpg" alt="라이브" />
                       </div>
-                      <div class="live-info-main">
-                        <p class="live-info-date">04월 27일 (목요일)</p>
-                        <p class="live-info-time">16:00</p>
-                      </div>
-                      <div class="live-info-bottom clearfix">
-                        <div class="live-info-thumb">
-                          <img src="images/live1.jpg" alt="라이브" />
-                        </div>
-                        <div class="live-info-desc">
-                          <p class="live-info-desc-title">
-                            [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
-                            10인분)+라면사리
-                          </p>
-                          <p class="live-info-desc-price">
-                            <em>22%</em> <b>19,840</b>원
+                      <div class="live-info">
+                        <div class="live-info-top">
+                          <span class="live-info-cate">방송예정</span>
+                          <p class="live-info-title">
+                            2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
+                            준비했어요😆
                           </p>
                         </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="live-link">
-                    <div class="live-img">
-                      <img src="images/live2.jpg" alt="라이브" />
-                    </div>
-                    <div class="live-info">
-                      <div class="live-info-top">
-                        <span class="live-info-cate">방송예정</span>
-                        <p class="live-info-title">
-                          2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
-                          준비했어요😆
-                        </p>
-                      </div>
-                      <div class="live-info-main">
-                        <p class="live-info-date">04월 27일 (목요일)</p>
-                        <p class="live-info-time">16:00</p>
-                      </div>
-                      <div class="live-info-bottom clearfix">
-                        <div class="live-info-thumb">
-                          <img src="images/live1.jpg" alt="라이브" />
+                        <div class="live-info-main">
+                          <p class="live-info-date">04월 27일 (목요일)</p>
+                          <p class="live-info-time">16:00</p>
                         </div>
-                        <div class="live-info-desc">
-                          <p class="live-info-desc-title">
-                            [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
-                            10인분)+라면사리
-                          </p>
-                          <p class="live-info-desc-price">
-                            <em>22%</em> <b>19,840</b>원
-                          </p>
+                        <div class="live-info-bottom clearfix">
+                          <div class="live-info-thumb">
+                            <img src="images/live1.jpg" alt="라이브" />
+                          </div>
+                          <div class="live-info-desc">
+                            <p class="live-info-desc-title">
+                              [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
+                              10인분)+라면사리
+                            </p>
+                            <p class="live-info-desc-price">
+                              <em>22%</em> <b>19,840</b>원
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="live-link">
-                    <div class="live-img">
-                      <img src="images/live3.jpg" alt="라이브" />
-                    </div>
-                    <div class="live-info">
-                      <div class="live-info-top">
-                        <span class="live-info-cate">방송예정</span>
-                        <p class="live-info-title">
-                          2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
-                          준비했어요😆
-                        </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="live-link">
+                      <div class="live-img">
+                        <img src="images/live2.jpg" alt="라이브" />
                       </div>
-                      <div class="live-info-main">
-                        <p class="live-info-date">04월 27일 (목요일)</p>
-                        <p class="live-info-time">16:00</p>
-                      </div>
-                      <div class="live-info-bottom clearfix">
-                        <div class="live-info-thumb">
-                          <img src="images/live1.jpg" alt="라이브" />
-                        </div>
-                        <div class="live-info-desc">
-                          <p class="live-info-desc-title">
-                            [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
-                            10인분)+라면사리
-                          </p>
-                          <p class="live-info-desc-price">
-                            <em>22%</em> <b>19,840</b>원
+                      <div class="live-info">
+                        <div class="live-info-top">
+                          <span class="live-info-cate">방송예정</span>
+                          <p class="live-info-title">
+                            2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
+                            준비했어요😆
                           </p>
                         </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="live-link">
-                    <div class="live-img">
-                      <img src="images/live4.jpg" alt="라이브" />
-                    </div>
-                    <div class="live-info">
-                      <div class="live-info-top">
-                        <span class="live-info-cate">방송예정</span>
-                        <p class="live-info-title">
-                          2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
-                          준비했어요😆
-                        </p>
-                      </div>
-                      <div class="live-info-main">
-                        <p class="live-info-date">04월 27일 (목요일)</p>
-                        <p class="live-info-time">16:00</p>
-                      </div>
-                      <div class="live-info-bottom clearfix">
-                        <div class="live-info-thumb">
-                          <img src="images/live1.jpg" alt="라이브" />
+                        <div class="live-info-main">
+                          <p class="live-info-date">04월 27일 (목요일)</p>
+                          <p class="live-info-time">16:00</p>
                         </div>
-                        <div class="live-info-desc">
-                          <p class="live-info-desc-title">
-                            [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
-                            10인분)+라면사리
-                          </p>
-                          <p class="live-info-desc-price">
-                            <em>22%</em> <b>19,840</b>원
-                          </p>
+                        <div class="live-info-bottom clearfix">
+                          <div class="live-info-thumb">
+                            <img src="images/live1.jpg" alt="라이브" />
+                          </div>
+                          <div class="live-info-desc">
+                            <p class="live-info-desc-title">
+                              [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
+                              10인분)+라면사리
+                            </p>
+                            <p class="live-info-desc-price">
+                              <em>22%</em> <b>19,840</b>원
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="live-link">
+                      <div class="live-img">
+                        <img src="images/live3.jpg" alt="라이브" />
+                      </div>
+                      <div class="live-info">
+                        <div class="live-info-top">
+                          <span class="live-info-cate">방송예정</span>
+                          <p class="live-info-title">
+                            2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
+                            준비했어요😆
+                          </p>
+                        </div>
+                        <div class="live-info-main">
+                          <p class="live-info-date">04월 27일 (목요일)</p>
+                          <p class="live-info-time">16:00</p>
+                        </div>
+                        <div class="live-info-bottom clearfix">
+                          <div class="live-info-thumb">
+                            <img src="images/live1.jpg" alt="라이브" />
+                          </div>
+                          <div class="live-info-desc">
+                            <p class="live-info-desc-title">
+                              [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
+                              10인분)+라면사리
+                            </p>
+                            <p class="live-info-desc-price">
+                              <em>22%</em> <b>19,840</b>원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="live-link">
+                      <div class="live-img">
+                        <img src="images/live4.jpg" alt="라이브" />
+                      </div>
+                      <div class="live-info">
+                        <div class="live-info-top">
+                          <span class="live-info-cate">방송예정</span>
+                          <p class="live-info-title">
+                            2박 3일로 떠나는 후쿠오카 여행✈ 패키지VS자유여행 다
+                            준비했어요😆
+                          </p>
+                        </div>
+                        <div class="live-info-main">
+                          <p class="live-info-date">04월 27일 (목요일)</p>
+                          <p class="live-info-time">16:00</p>
+                        </div>
+                        <div class="live-info-bottom clearfix">
+                          <div class="live-info-thumb">
+                            <img src="images/live1.jpg" alt="라이브" />
+                          </div>
+                          <div class="live-info-desc">
+                            <p class="live-info-desc-title">
+                              [미미의밥상] 감자탕 4.7kg(국내산등뼈 100%
+                              10인분)+라면사리
+                            </p>
+                            <p class="live-info-desc-price">
+                              <em>22%</em> <b>19,840</b>원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            </div>
-            <script>
-              var swiper = new Swiper(".sw-live", {
-                slidesPerView: 4,
-                spaceBetween: 10,
-                breakpoints: {
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                  },
-                  1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 27,
-                  },
-                },
-              });
-            </script>
           </div>
         </div>
       </section>
@@ -1111,29 +980,252 @@
                 </div>
               </div>
             </div>
-         
           </div>
           <div class="section-bottom">
             <a href="#" class="bt-link-shop">도서 홈 바로가기</a>
           </div>
-          <script>
-            var swiper = new Swiper(".sw-books", {
-              slidesPerView: 5,
-              spaceBetween: 10,
-              breakpoints: {
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 32,
-                },
-                1280: {
-                  slidesPerView: 5,
-                  spaceBetween: 27,
-                },
-              },
-            });
-          </script>
         </div>
       </section>
+      <!-- event -->
+      <section class="event">
+        <div class="inner">
+          <div class="section_top">
+            <h2>이벤트</h2>
+            <p>인터파크에서 할인혜택을 꼭 챙기세요.</p>
+          </div>
+          <div class="section-slide">
+            <!-- navigation -->
+            <button class="swiper_btn sw_prev">이전</button>
+            <button class="swiper_btn sw_next">다음</button>
+            <!-- events Swiper -->
+            <div class="swiper sw-events">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="images/banner1.jpg" alt="이벤트" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="images/banner2.jpg" alt="이벤트" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="images/banner3.jpg" alt="이벤트" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="images/banner4.jpg" alt="이벤트" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <!-- 하단 -->
+      <footer class="footer">
+        <!-- 하단메뉴 -->
+        <div class="footer-menu">
+          <div class="inner">
+            <ul class="footer-menu-list">
+              <li>
+                <a href="#">회사소개<i class="f-icon"></i></a>
+                <ul class="more-list">
+                  <li><a href="#">인터파크</a></li>
+                  <li><a href="#">인터파크커머스</a></li>
+                </ul>
+              </li>
+              <li><a href="#">이용약관</a></li>
+              <li>
+                <a href="#"><strong>개인정보 처리 방침</strong></a>
+              </li>
+              <li><a href="#">위치기반서비스 이용약관</a></li>
+              <li><a href="#">여행약관</a></li>
+              <li><a href="#">여행자 보험 가입안내</a></li>
+              <li><a href="#">티켓판매안내</a></li>
+              <li>
+                <a href="#">공지사항<i class="f-icon"></i></a>
+                <ul class="more-list">
+                  <li><a href="#">인터파크</a></li>
+                  <li><a href="#">인터파크커머스</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">고객센터<i class="f-icon"></i></a>
+                <ul class="more-list">
+                  <li><a href="#">투어 고객센터</a></li>
+                  <li><a href="#">티켓 고객센터</a></li>
+                  <li><a href="#">쇼핑 고객센터</a></li>
+                  <li><a href="#">도서 고객센터</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Language<i class="f-icon"></i></a>
+                <ul class="more-list">
+                  <li><a href="#">Korean</a></li>
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Japanese</a></li>
+                  <li><a href="#">Chinese</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 하단의 메인 (모바일 없어짐) -->
+        <div class="footer-main">
+          <div class="inner">
+            <!-- 하단메인 왼쪽 -->
+            <div class="footer-main-left">
+              <p class="company-name">(주)인터파크</p>
+              <ul class="company-info">
+                <li>
+                  <span class="f-line"
+                    >서울시 강남구 삼성로 512 삼성동빌딩 10층</span
+                  >
+                  <span class="f-line">호스팅서비스제공자 (주)인터파크</span>
+                  대표이사 최휘영<br />
+                  <span class="f-line"
+                    >사업자등록번호 824-81-02515
+                    <a href="#" class="line">사업자정보확인</a></span
+                  >
+                  <span>통신판매업신고 2022-서울강남-02179</span><br />
+                  <span>관광사업증 등록번호 : 제2014-42호</span>
+                </li>
+                <li>
+                  <span class="f-line"
+                    ><b>고객센터</b>
+                    <a href="#" class="line">투어1:1문의</a></span
+                  >
+                  <span><a href="#" class="line">티켓1:1문의</a></span> <br />
+                  <span class="f-line">투어 1588-3443</span>
+                  <span class="f-line">티켓 1544-1555</span>
+                  <span class="f-line">해외항공 02-3479-4399</span>
+                  <span>국내항공 02-3479-4340</span><br />
+                  <span class="f-line">팩스 02-6924-9000</span>
+                  <span>이메일 <a href="#">helpdesk@interpark.com</a></span>
+                </li>
+                <li>
+                  <span><b>전자금융거래 분쟁처리 담당</b></span
+                  ><br />
+                  <span class="f-line">투어 1588-3443</span>
+                  <span class="f-line">티켓 1544-1555</span>
+                  <span>팩스 02-6924-9001</span> <br />
+                  <span class="f-line"
+                    >이메일 <a href="#">intersolution@interpark.com</a></span
+                  >
+                  <span
+                    >개인정보보호책임자 <a href="#">cpo@interpark.com</a></span
+                  >
+                </li>
+                <li>
+                  <p>
+                    (주)인터파크는 인터파크티켓, 인터파크투어의
+                    통신판매중개자로서 통신판매의 당사자가 아니므로, 개별
+                    판매자가 등록한 오픈마켓 상품에 대해서 주식회사 인터파크는
+                    일체 책임을 지지 않습니다.
+                  </p>
+                  <span class="copy"
+                    >Copyright ⓒ INTERPARK Co.,Ltd. All Rights Reserved.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- 하단 메인 오른쪽 -->
+            <div class="footer-main-right">
+              <p class="company-name">(주)인터파크커머스</p>
+              <ul class="company-info">
+                <li>
+                  <span>서울시 서초구 강남대로 447(서초동, 남서울빌딩)</span
+                  ><br />
+                  <span class="f-line"
+                    >호스팅서비스제공자 (주)인터파크커머스</span
+                  >
+                  <span>대표이사 김양선</span><br />
+                  <span class="f-line"
+                    >사업자 등록번호 : 422-81-03185
+                    <a href="#" class="line">사업자정보확인</a></span
+                  >
+                  <span>통신판매업신고 2023-서울서초-0823</span>
+                </li>
+                <li>
+                  <span class="f-line"
+                    ><b>고객센터</b>
+                    <a href="#" class="line">쇼핑1:1문의</a></span
+                  >
+                  <span><a href="#" class="line">도서1:1문의</a></span> <br />
+                  <span class="f-line">쇼핑 1588-1005</span>
+                  <span class="f-line">도서 1577-2555</span>
+                  <span class="f-line">팩스 02-6924-9000</span>
+                  <span>이메일 <a href="#">helpdesk@interpark.com</a></span>
+                </li>
+                <li>
+                  <span><b>전자금융거래 분쟁처리 담당</b></span
+                  ><br />
+                  <span class="f-line">쇼핑 1588-3443</span>
+                  <span class="f-line">도서 1544-1555</span>
+                  <span>팩스 02-6924-9001</span> <br />
+                  <span class="f-line"
+                    >이메일 <a href="#">intersolution@interpark.com</a></span
+                  >
+                  <span
+                    >개인정보보호책임자 <a href="#">cpo@interpark.com</a></span
+                  >
+                </li>
+                <li>
+                  <p>
+                    (주)인터파크커머스는 인터파크쇼핑, 인터파크도서의
+                    통신판매중개자로서 통신판매의 당사자가 아니므로, 개별
+                    판매자가 등록한 오픈마켓 상품에 대해서 주식회사
+                    인터파크커머스는 일체 책임을 지지 않습니다.
+                  </p>
+                  <span class="copy"
+                    >Copyright ⓒ INTERPARKCormmerce Co.,Ltd. All Rights
+                    Reserved.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 모바일 하단 -->
+        <div class="footer-mobile">
+          <div class="inner">
+            <div class="footer-mobile-menu">
+              <a href="#" class="a-line">이용약관</a>
+              <a href="#" class="a-line"><strong>개인정보 처리방침</strong></a>
+              <a href="#">위치기반서비스 이용약관</a>
+
+              <br />
+
+              <a href="#" class="a-line">분쟁해결기준</a>
+              <a href="#" class="a-line">이용약관</a>
+              <a href="#" class="a-line">여행자 보험 가입안내</a>
+              <a href="#" class="a-more">공지사항</a>
+            </div>
+            <div class="footer-mobile-info">
+              <a href="#" class="a-line a-more"
+                ><strong>(주)인터파크</strong> 사업자정보</a
+              >
+              <a href="#" class="a-more"
+                ><strong>(주)인터파크커머스</strong> 사업자정보</a
+              >
+            </div>
+            <div class="footer-mobile-desc">
+              (주)인터파크는 인터파크티켓, 인터파크투어의 통신판매중개자로서
+              통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에
+              대해서 주식회사 인터파크는 일체 책임을 지지 않습니다.
+              (주)인터파크커머스는 인터파크쇼핑, 인터파크도서의
+              통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가
+              등록한 오픈마켓 상품에 대해서 주식회사 인터파크커머스는 일체
+              책임을 지지 않습니다.
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
