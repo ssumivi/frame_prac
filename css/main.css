@@ -36,6 +36,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
+
 /* section all */
 .wrap > section {
   padding: 30px 0 90px 0;
@@ -132,6 +133,23 @@ body {
   background: url("../images/icon_linkArrow.svg") no-repeat center;
   width: 17px;
   height: 11px;
+}
+/* quick menu */
+.quick-menu{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99; 
+  display: none; 
+}
+.quick-menu .inner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0  0 20px;
 }
 /* top */
 .header {
@@ -297,6 +315,14 @@ body {
 .swiper_prom a img {
   width: 100%;
   height: auto;
+}
+.sw-promotion-control{
+  position: relative;
+  text-align: center;
+}
+.sw-promotion-pg{
+  display: inline-block;
+
 }
 /* shopping suggest */
 .swiper_sp {
@@ -700,11 +726,12 @@ body {
 .footer-menu {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
 }
 .footer-menu-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .footer-menu-list > li {
   position: relative;
@@ -806,4 +833,66 @@ body {
 .company-info li a.line {
   color: #4a95ff;
   text-decoration: underline;
+}
+/* footer mobile */
+.footer-mobile{
+  display: none;
+}
+.footer-mobile .inner{
+  background-color: #fafafa;
+  padding: 30px 0;
+  text-align: center;
+}
+.footer-mobile-menu a, 
+.footer-mobile-info a{
+  position: relative;
+  display: inline-block;
+  padding: 0 8px;
+  font-style: 1.1rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+.footer-mobile-menu a strong, 
+.footer-mobile-info a strong{
+  font-weight: 700;
+}
+.a-line::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 1.5px;
+  right: 0;
+  width: 1px;
+  height: 1rem;
+  background-color: #afafaf;
+}
+.a-more::after{
+  content: "";
+  display: inline-block;
+  top: 1px;
+  right: -5px;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: url("../images/footer_arrow.svg");
+}
+.footer-mobile-info .a-line::before{
+  right: -20px;
+}
+.footer-mobile-info a:first-child{
+  margin-right: 20px;
+}
+.footer-mobile-info{
+  margin: 25px 0;
+}
+.footer-mobile-desc{
+  position: relative;
+  display: block;
+  padding: 0 15%;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #b2b2b2;
+  /* 줄내림 할 때 단락으로 */
+  word-break: keep-all;
+  margin-bottom: 85px;
 }

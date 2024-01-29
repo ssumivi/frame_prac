@@ -21,15 +21,15 @@ window.onload = function () {
   });
   //swiper shopping
   var swiper = new Swiper(".swiper_sp", {
-    slidesPerView: 4,
-    spaceBetween: 10,
+    slidesPerView: 5,
+    // spaceBetween: 10,
     grid: {
       rows: 2,
       fill: "row",
     },
     navigation: {
-      nextEl: ".section_slide .sw_next",
-      prevEl: ".section_slide .sw_prev",
+      nextEl: ".shopping .section_slide .sw_next",
+      prevEl: ".shopping .section_slide .sw_prev",
     },
     breakpoints: {
       900: {
@@ -69,8 +69,8 @@ window.onload = function () {
       fill: "row",
     },
     navigation: {
-      nextEl: ".section_slide .sw_next",
-      prevEl: ".section_slide .sw_prev",
+      nextEl: ".tour .section_slide .sw_next",
+      prevEl: ".tour .section_slide .sw_prev",
     },
     spaceBetween: 10,
     breakpoints: {
@@ -98,6 +98,10 @@ window.onload = function () {
   var swiper = new Swiper(".sw-ticket", {
     slidesPerView: "auto",
     spaceBetween: 10,
+    navigation: {
+      nextEl: ".ticket .section_slide .sw_next",
+      prevEl: ".ticket .section_slide .sw_prev",
+    },
     breakpoints: {
       1024: {
         slidesPerView: 3,
@@ -113,6 +117,10 @@ window.onload = function () {
   var swiper = new Swiper(".sw-live", {
     slidesPerView: 4,
     spaceBetween: 10,
+    navigation: {
+      nextEl: ".live .section_slide .sw_next",
+      prevEl: ".live .section_slide .sw_prev",
+    },
     breakpoints: {
       1024: {
         slidesPerView: 3,

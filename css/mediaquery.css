@@ -3,8 +3,14 @@
   .inner {
     max-width: 1024px;
   }
+  .promotion .inner {
+    height: 275px;
+  }
 }
 @media screen and (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
   .inner {
     padding: 0 20px;
     padding-bottom: 20px;
@@ -12,60 +18,103 @@
     max-width: 760px;
     border-bottom: 8px solid #f0f4f4;
   }
-  .header{
+  .swiper_btn {
+    display: none;
+  }
+  .bt-link-shop {
+    line-height: 48px;
+    border-radius: 3px;
+    display: block;
+  }
+  .quick-menu {
+    display: block;
+  }
+  .quick-menu .inner {
+    border-bottom: 0;
+  }
+  .wrap > section {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .promotion .section_top {
+    display: block;
+  }
+
+  .section_top p {
+    line-height: 18px;
+  }
+  .section_top .btns {
+    margin: 15px 0;
+    white-space: nowrap;
+  }
+  .section_top .btn a {
+    line-height: 34px;
+    padding: 0 14px;
+    margin-right: 5px;
+  }
+  .header {
     border: none;
   }
-  .header .inner{
+  .header .inner {
     padding-top: 15px;
     height: 230px;
   }
- 
-  .logo{
+  .header_bt {
+    justify-content: center;
+  }
+  .logo {
     width: 77px;
     height: 18px;
-   padding-top: 50px;
-
+    padding-top: 50px;
   }
-  .header_left{
+  .header_left {
     width: 100%;
     /* background-color: bisque; */
   }
-  .search{
-
+  .search {
   }
-.header_right .member_list{
+  .header_right .member_list {
     display: none;
   }
-  .mobile_mypage{
+  .mobile_mypage {
     display: block;
   }
-  .service-menu{
+  .service-menu {
     display: none;
   }
-  .header_top{
+  .header_top {
     justify-content: center;
   }
-  .service-list li{
+  .service-list li {
     display: flex;
     width: 48px;
-
   }
-.header_bt .service-list li a{
+  .header_bt .service-list li a {
     font-size: 12px;
     text-align: center;
   }
-  .service-list li a img{
+  .service-list li a img {
     width: 48px;
     height: 48px;
     margin: 0;
   }
-  .header_left{
+  .header_left {
     flex: none;
   }
-  .search{
+  .search {
     position: absolute;
     top: 157px;
     left: 50%;
     transform: translatex(-50%);
+  }
+  .promotion .inner {
+    height: 300px;
+  }
+  .sw-promotion-control {
+    display: block;
+  }
+  .sw-promotion-pg {
+    width: 8px;
+    height: 8px;
   }
 }
